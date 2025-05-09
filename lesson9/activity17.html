@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Selectors Example</title>
+  <style>
+    /* Advanced Selectors */
+    ul > li:first-child {
+      font-weight: bold;
+    }
+
+    section article[class~="featured"] {
+      background-color: #f0f8ff;
+      border-left: 5px solid #00aaff;
+      padding: 10px;
+    }
+
+    /* Pseudo-classes */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    
+
+    li:nth-child(even) {
+      background-color: #eee;
+    }
+
+    /* Pseudo-elements */
+    p::first-line {
+      font-weight: bold;
+      color: navy;
+    }
+
+    h2::before {
+      content: "★ ";
+      color: gold;
+    }
+
+    h2::after {
+      content: " ★";
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Advanced Styling</h1>
+
+  <section>
+    <article class="featured">
+      <h2>Featured Article</h2>
+      <p>This is an example of an article using a pseudo-element to highlight the first line of text.</p>
+    </article>
+    <article>
+      <h2>Regular Article</h2>
+      <p>Another article that doesn’t use the featured class.</p>
+    </article>
+  </section>
+
+  <ul>
+    <li>First item (selected with > selector)</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </form>
+
+</body>
+</html>
