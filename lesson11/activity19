@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Styling Example</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+  <style>
+    /* You can also include the CSS directly */
+    .text-style {
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: #333333;
+      text-align: center;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <p class="text-style">This is a styled paragraph of text.</p>
+</body>
+</html>
